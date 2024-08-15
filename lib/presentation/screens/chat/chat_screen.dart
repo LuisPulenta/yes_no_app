@@ -23,14 +23,16 @@ class ChatScreen extends StatelessWidget {
           ),
         ),
       ),
-      body: _chatView(),
+      body: const _ChatView(),
     );
   }
 }
 
 //--------------------- _chatView -----------------------------
 
-class _chatView extends StatelessWidget {
+class _ChatView extends StatelessWidget {
+  const _ChatView();
+
   @override
   Widget build(BuildContext context) {
     final chatProvider = context.watch<ChatProvider>();
